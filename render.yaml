@@ -1,0 +1,16 @@
+﻿services:
+  - type: web
+    name: cardiovascular-risk-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: ENVIRONMENT
+        value: production
+      - key: LOG_LEVEL
+        value: INFO
+      # FRONTEND_URL se configurará en el dashboard cuando tengas la URL de tu frontend
+      # Ejemplo: https://tu-frontend-app.vercel.app

@@ -1,0 +1,48 @@
+ # Entorno virtual
+venv/
+env/
+.env
+
+# Cache de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Pytest
+.pytest_cache/
+
+# Archivos de configuración local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de modelos grandes (si son muy pesados)
+# models/*.pkl
+
+# Node modules (si usas frontend con npm)
+node_modules/
